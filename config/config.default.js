@@ -55,8 +55,8 @@ module.exports = appInfo => {
       secretKey: 'P4HLLpfme2wLHDpxKeD3PwEBTrM0ES0l'
     },
     weapp: {
-      appId: 'wx221787b1ffaddcbd',
-      appSecret: '42db1b0765885fb37cbfdddf48e3b4b9',
+      appId: 'wx79e1700ff218a66d',
+      appSecret: 'df1677c10333ffab9bfacf289b4fec79',
     },
     mysql: {
       // database configuration
