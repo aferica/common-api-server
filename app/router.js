@@ -15,4 +15,6 @@ module.exports = app => {
   router.post('/common/baidu/aip/logo', controller.baidu.aip.logo);
   router.post('/common/baidu/aip/car', controller.baidu.aip.car);
   router.post('/common/baidu/aip/dish', controller.baidu.aip.dish);
+
+  router.get('/common/util/redirect', controller.redirect.index);
 };
