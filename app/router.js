@@ -18,4 +18,5 @@ module.exports = app => {
 
   router.get('/common/utils/proxy/get', controller.utils.proxy.getProxyList);
   router.get('/common/utils/tuiguang', controller.utils.tuiguang.tuiguang);
+  router.get('/common/util/redirect', controller.redirect.index);
 };
