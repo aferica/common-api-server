@@ -27,6 +27,24 @@ class RedirectController extends Controller {
     ctx.body = result.res;
     ctx.status = result.status;
   }
+
+  async getNeedProxy() {
+    const { ctx, service } = this;
+    const requestUrl = decodeURIComponent(ctx.query.url);
+    const needRederer = ctx.query.needRederer;
+    const options = {
+      url: requestUrl,
+      rejectUnauthorized: false
+    };
+    if(needRederer) {
+      if (referer == '') {
+        referer = url.parse(referer).protocol + '://' + url.parse(referer).host
+      }
+      options.headers.referer = referer
+    }
+    const res = await service.utils.request.get(options, true);
+    ctx.body = res;
+  }
 }
 
 module.exports = RedirectController;

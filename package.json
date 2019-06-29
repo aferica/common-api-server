@@ -15,7 +15,9 @@
     "egg-scripts": "^2.11.0",
     "jsonwebtoken": "^8.5.1",
     "moment": "^2.24.0",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "socks5-http-client": "^1.0.4",
+    "socks5-https-client": "^1.2.1"
   },
   "devDependencies": {
     "autod": "^3.0.1",

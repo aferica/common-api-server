@@ -72,6 +72,11 @@ module.exports = appInfo => {
         // database
         database: 'common',    
       }
+    },
+    porxyOptions: {
+      httpUrl: 'http://127.0.0.1:1080',
+      socksHost: '127.0.0.1',
+      socksPort: 1080
     }
   };
 

@@ -35,5 +35,11 @@ module.exports = () => {
     }
   };
 
+  config.porxyOptions = {
+    httpUrl: 'http://127.0.0.1:1080',
+    socksHost: '127.0.0.1',
+    socksPort: 1080
+  };
+
   return config;
 };
