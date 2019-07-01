@@ -41,5 +41,15 @@ module.exports = () => {
     socksPort: 1080
   };
 
+  config.swagger2 = {
+    // enable: false, // disable swagger , default true
+    base: {
+      schemes: [
+        'https',
+      ],
+      host: 'common.aferica.site'
+    }
+  }
+
   return config;
 };

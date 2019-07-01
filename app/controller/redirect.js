@@ -6,12 +6,12 @@ class RedirectController extends Controller {
   async index() {
     const { ctx } = this;
     const requestUrl = decodeURIComponent(ctx.query.url);
-    const needRederer = ctx.query.needRederer;
+    const needReferer = ctx.query.needReferer;
     let referer = ctx.query.customReferer || '';
     let headers = {
       'user-agent': '	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
     }
-    if(needRederer) {
+    if(needReferer) {
       if (referer == '') {
         referer = url.parse(referer).protocol + '://' + url.parse(referer).host
       }

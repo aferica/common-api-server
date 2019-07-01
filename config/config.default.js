@@ -77,6 +77,64 @@ module.exports = appInfo => {
       httpUrl: 'http://127.0.0.1:1080',
       socksHost: '127.0.0.1',
       socksPort: 1080
+    },
+
+    swagger2: {
+      // enable: false, // disable swagger , default true
+      base: {
+        schemes: [
+          'http',
+        ],
+        host: '127.0.0.1:7001',
+        basePath: '/',
+        consumes: [
+          'application/json',
+          'multipart/form-data',
+        ],
+        produces: [
+          'application/json',
+          'multipart/form-data',
+        ],
+        info: {
+          description: '这是本项目API接口的说明文档',
+          version: '1.0.0',
+          title: 'Common Api Server',
+          contact: {
+            email: 'afericaking@gmail.com',
+          }
+        },
+        tags: [
+          {
+            name: '工具类',
+            description: '工具类接口，包括地址转发',
+          },
+          {
+            name: '百度图像识别',
+            description: '百度图像识别',
+          },
+        ],
+        definitions: {
+          result: {
+            type: 'object',
+            properties: {
+              code: {
+                type: 'integer',
+                description: '请求状态码，0代表成功'
+              },
+              data: {
+                type: 'object'
+              },
+              msg: {
+                type: 'string',
+                description: '请求结果信息'
+              }
+            }
+          }
+        },
+        securityDefinitions:{
+        // security definitions
+        }
+      },
     }
   };
 
