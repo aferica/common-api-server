@@ -1,6 +1,14 @@
 const Controller = require('egg').Controller;
 
 class AIPController extends Controller {
+  /**
+   * @api {post} /common/baidu/aip/general 百度图像识别--通用接口
+   * @apiVersion 1.0.0
+   * @apiName 百度图像识别--通用接口
+   * @apiGroup 百度图像识别
+   * 
+   * @apiParam {file} image 需要识别的图片
+   */
   async general() {
     const { ctx, service } = this;
     let image;
