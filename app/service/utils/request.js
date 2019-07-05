@@ -45,8 +45,33 @@ class RequestService extends Service {
         socksPort: app.config.porxyOptions.socksPort
       };
     }
-
     return await request(options);
+  }
+
+  async getHtml(options, proxy = false) {
+    const { app } = this;
+    if (proxy) {
+      if (options.url.indexOf("https") > -1) {
+        options.agentClass = httpsAgent;
+        options.strictSSL = true;
+      } else {
+        options.agentClass = httpAgent;
+      }
+      options.agentOptions = {
+        socksHost: app.config.porxyOptions.socksHost,
+        socksPort: app.config.porxyOptions.socksPort
+      };
+    }
+    console.log(options);
+    return new Promise((resolve, reject) => {
+      request.get(options, function(error, response, body) {
+        if (!error && response.statusCode == 200) {
+          return resolve(body);
+        } else {
+          return reject(error);
+        }
+      });
+    });
   }
 
   // 获取代理ip
