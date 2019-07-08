@@ -3,67 +3,6 @@
 const Controller = require('egg').Controller;
 
 class VideoController extends Controller {
-  /**
-   * @api {get} /common/video/index 视频源信息
-   */
-  async index() {
-    const { ctx } = this;
-    const res = {
-      "source": [
-        {
-          "baseUrl": "https://www.qtmovie.com",
-          "title": "晴天影视",
-        },
-        {
-          "baseUrl": "http://fpx6.cn",
-          "title": "墨语影视",
-        },
-        {
-          "baseUrl": "http://www.qingqingyy.com",
-          "title": "轻轻影院",
-        },
-        {
-          "baseUrl": "http://www.xindyy.cn",
-          "title": "迪迪影视",
-        },
-        {
-          "baseUrl": "http://www.2n65.cn",
-          "title": "VIPKU",
-        },
-        {
-          "baseUrl": "http://www.yunkej.cn",
-          "title": "云客影视",
-        },
-        {
-          "baseUrl": "http://www.binbin95.com",
-          "title": "彬彬影院",
-        },
-        {
-          "baseUrl": "http://kan.eeeul.com",
-          "title": "会源影视",
-        },
-        {
-          "baseUrl": "https://m.jlszyy.cc",
-          "title": "达达兔",
-        },
-      ],
-      "list": {
-        "mainUrl": "/api.php/provide/vod/?ac=list",
-        "type": "t",
-        "page": "pg",
-        "searchKey": "wd",
-        "hours": "h"
-      },
-      "detail": {
-        "mainUrl": "/api.php/provide/vod/?ac=detail",
-        "ids": "ids",
-        "type": "t",
-        "page": "pg",
-        "hours": "h"
-      }
-    };
-    ctx.helper.success({ctx, res})
-  }
 
   /**
    * @api {get} /common/video/home 视频网站首页信息
