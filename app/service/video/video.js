@@ -29,19 +29,23 @@ class VideoService extends Service {
         let swiper = [];
         const mianCss = payload.swiperCss.split('->')[0];
         const infoCss = payload.swiperCss.split('->')[1];
-        console.log(mianCss);
         $(mianCss).each(function (idx, element) {
           const $item = $(element);
           const nameCss = infoCss.split(';')[0];
           const coverCss = infoCss.split(';')[1];
-          console.log(coverCss);
-          console.log($item.find(nameCss.split('&&')[0]).text());
           const hrefCss = infoCss.split(';')[2];
+          const name = $item.find(nameCss).text();
+          if (!name) {
+            return true;
+          }
+          console.log(coverCss.split('&&')[0] + coverCss.split('&&')[1])
+          const cover = $item.find(coverCss.split('&&')[0]).css();
+          const href = $item.find(hrefCss.split('&&')[0]).attr(hrefCss.split('&&')[1]);
           swiper.push({
             index: idx,
-            name: $item.find(nameCss.split('&&')[0]).attr(nameCss.split('&&')[1]),
-            cover: $item.find(coverCss.split('&&')[0]).attr(coverCss.split('&&')[1]),
-            href: $item.find(hrefCss.split('&&')[0]).attr(hrefCss.split('&&')[1])
+            name: name,
+            cover: cover,
+            href: href
           })
         });
         result.swiper = swiper;
