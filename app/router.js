@@ -9,6 +9,7 @@ module.exports = app => {
 
   router.get('/api/weapp/check/:code', controller.user.weapp.check)
 
+  router.get('/common/video/index', controller.video.video.index)
   router.get('/common/video/home', controller.video.video.home)
 
   router.post('/common/baidu/aip/general', controller.baidu.aip.general);
