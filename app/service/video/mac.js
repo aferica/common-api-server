@@ -40,6 +40,7 @@ class MacService extends Service {
         let swiperStr = await service.utils.request.getHtml(options, false);
         const swiper = JSON.parse(swiperStr).list.map(e => {
           const jsonObject = {};
+          jsonObject.vod_id = e.vod_id;
           jsonObject.vod_name = e.vod_name;
           jsonObject.vod_score = e.vod_score;
           jsonObject.vod_class = e.vod_class;
