@@ -12,6 +12,7 @@ module.exports = app => {
   router.get('/common/video/home', controller.video.video.home)
   router.get('/common/video/index', controller.video.mac.index)
   router.get('/common/video/mac/home', controller.video.mac.home)
+  router.get('/common/video/mac/detail', controller.video.mac.detail)
 
   router.post('/common/baidu/aip/general', controller.baidu.aip.general);
   router.post('/common/baidu/aip/plant', controller.baidu.aip.plant);

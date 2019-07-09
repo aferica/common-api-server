@@ -451,6 +451,42 @@ class VideoController extends Controller {
     // 设置响应内容和响应状态码
     ctx.helper.success({ctx, res})
   }
+
+  /**
+   * @api {get} /common/video/mac/home MAC系列视频网站首页信息
+   * @apiVersion 1.0.0
+   * @apiName 视频网站首页信息
+   * @apiGroup Video
+   * 
+   * @apiParam {string} needReferer 是否需要Referer，如果是需要，默认为 baseUrl的域名
+   * @apiParam {string} customReferer 自定义Referer
+   * @apiParam {string} needProxy 是否需要代理
+   * 
+   * @apiParam {string} serverSplit 播放服务器分隔符，默认$$$
+   * @apiParam {string} urlSplit1  播放地址第一级分隔符，默认$$$
+   * @apiParam {string} urlSplit2  播放地址第二级分隔符，默认#
+   * @apiParam {string} urlSplit3  播放地址第三级分隔符，默认$
+   */
+  async detail () {
+    const { ctx, service } = this;
+    const payload = ctx.query;
+    if (!payload.serverSplit) {
+      payload.serverSplit = '$$$';
+    }
+    if (!payload.urlSplit1) {
+      payload.urlSplit1 = '$$$';
+    }
+    if (!payload.urlSplit2) {
+      payload.urlSplit2 = '#';
+    }
+    if (!payload.urlSplit3) {
+      payload.urlSplit3 = '$';
+    }
+    // 调用 Service 进行业务处理
+    const res = await service.video.mac.detail(payload)
+    // 设置响应内容和响应状态码
+    ctx.helper.success({ctx, res})
+  }
 }
 
 module.exports = VideoController;
