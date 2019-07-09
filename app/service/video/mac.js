@@ -102,11 +102,15 @@ class MacService extends Service {
     result.vod_area = tempRes.vod_area;
     result.vod_lang = tempRes.vod_lang;
     result.vod_year = tempRes.vod_year;
+    result.vod_score_num = tempRes.vod_score_num;
     result.vod_score = tempRes.vod_score;
     result.vod_hits = tempRes.vod_hits;
     result.vod_hits_day = tempRes.vod_hits_day;
     result.vod_hits_week = tempRes.vod_hits_week;
     result.vod_hits_month = tempRes.vod_hits_month;
+    result.vod_down = tempRes.vod_down;
+    result.vod_up = tempRes.vod_up;
+    result.vodvod_time_up = tempRes.vod_time ? tempRes.vod_time.substring(0, 10) : '未知';
     result.vod_content = tempRes.vod_content.replace(/<[^>]+>/g,"");;
     result.vod_play_from = tempRes.vod_play_from.split(payload.serverSplit);
     let videoPlayUrlMain = tempRes.vod_play_url.split(payload.urlSplit1);
