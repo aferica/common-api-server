@@ -3,11 +3,12 @@
 const Controller = require('egg').Controller;
 
 class VideoController extends Controller {
+
   /**
    * @api {get} /common/video/home 视频网站首页信息
    * @apiVersion 1.0.0
    * @apiName 视频网站首页信息
-   * @apiGroup 视频
+   * @apiGroup Video
    * 
    * @apiParam {string} needReferer 是否需要Referer，如果是需要，默认为 baseUrl的域名
    * @apiParam {string} customReferer 自定义Referer

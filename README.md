@@ -31,3 +31,8 @@ $ npm stop
 
 
 [egg]: https://eggjs.org
+
+## 文档自动生成
+```bash
+$ apidoc -i app/ -o ./app/public/apidoc
+```
