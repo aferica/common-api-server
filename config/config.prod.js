@@ -49,7 +49,13 @@ module.exports = () => {
       ],
       host: 'common.aferica.site'
     }
-  }
+  };
+
+  exports.alinode = {
+    // 从 `Node.js 性能平台` 获取对应的接入参数
+    appid: '80789',
+    secret: '47e02b1358f27ef191f42c51736bdd8a630f5a7b',
+  };
 
   return config;
 };

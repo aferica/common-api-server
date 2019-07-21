@@ -17,5 +17,9 @@ module.exports = {
   swagger2: {
     enable: false,
     package: 'egg-swagger2',
+  },
+  alinode: {
+    enable: true,
+    package: 'egg-alinode',
   }
 };
