@@ -26,35 +26,39 @@ class MacService extends Service {
     let result = {};
     if (res) {
       const $ = cheerio.load(res);
-      if (payload.swiperCss) {
-        let ids = '';
-        const mianCss = payload.swiperCss.split('->')[0];
-        const hrefCss = payload.swiperCss.split('->')[1];
-        $(mianCss).each(function (idx, element) {
-          const $item = $(element);
-          const href = $item.find(hrefCss.split('&&')[0]).attr(hrefCss.split('&&')[1]);
-          const id = href.replace(/[^0-9]/ig,"");
-          ids += ',' + id;
-        });
-        options.url += '/api.php/provide/vod/?ac=detail&ids=' + ids.substring(1);
-        let swiperStr = await service.utils.request.getHtml(options, false);
-        const swiper = JSON.parse(swiperStr).list.map(e => {
-          const jsonObject = {};
-          jsonObject.vod_id = e.vod_id;
-          jsonObject.vod_name = e.vod_name;
-          jsonObject.vod_score = e.vod_score;
-          jsonObject.vod_class = e.vod_class;
-          jsonObject.vod_area = e.vod_area;
-          jsonObject.vod_lang = e.vod_lang;
-          jsonObject.vod_remarks = e.vod_remarks;
-          jsonObject.vod_pic = baseUrl + url.parse(e.vod_pic).pathname;
-          jsonObject.vod_pic_slide = baseUrl + '/' + e.vod_pic_slide;
-          if (!e.vod_pic_slide) {
-            jsonObject.vod_pic_slide = jsonObject.vod_pic;
+      if (payload.css) {
+        for (let major of payload.css) {
+          let majorData = [];
+          let $main = $(major.main);
+          if (major.index != null) {
+            $main = $main.eq(major.index);
           }
-          return jsonObject;
-        });
-        result.swiper = swiper;
+          if (major.second) {
+            $main = $main.find(major.second);
+          }
+          $main.each(function (idx, element) {
+            const $item = $(element);
+            let info = {};
+            for (let minor of major.info) {
+              let value = '';
+              if (minor.attr === 'text') {
+                value = $item.find(minor.css).text();
+                value = value.replace(/\s*/g,"");
+              } else if (minor.attr === 'href') {
+                value = $item.find(minor.css).attr('href');
+                info['id'] = value.replace(/[^0-9]/ig,"");
+              } else {
+                value = $item.find(minor.css).attr(minor.attr);
+                if (minor.needBase) {
+                  value = baseUrl + value;
+                }
+              }
+              info[minor.key] = value;
+            }
+            majorData.push(info);
+          });
+          result[major.key] = majorData;
+        }
       }
     }
     return result;

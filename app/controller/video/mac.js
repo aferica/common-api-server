@@ -72,47 +72,47 @@ class VideoController extends Controller {
             }
           ]
         },
-        {
-          "baseUrl": "http://fpx6.cn",
-          "title": "墨语影视",
-          "type": [
-            { "name": "电影",
-              "id": "1",
-              "minor": [
-                { "name": "全部", "id": "1,6,7,8,9,10,11,12" },
-                { "name": "动作片", "id": "6" },
-                { "name": "喜剧片", "id": "7" },
-                { "name": "爱情片", "id": "8" },
-                { "name": "科幻片", "id": "9" },
-                { "name": "恐怖片", "id": "10" },
-                { "name": "剧情片", "id": "11" },
-                { "name": "战争片", "id": "12" }
-              ]
-            },
-            { "name": "电视剧",
-              "id": "2",
-              "minor": [
-                { "name": "全部", "id": "2,13,14,15,16" },
-                { "name": "国产剧", "id": "13" },
-                { "name": "港台剧", "id": "14" },
-                { "name": "日韩剧", "id": "15" },
-                { "name": "欧美剧", "id": "16" }
-              ]
-            },
-            { "name": "福利",
-              "id": "3",
-              "minor": [
-                { "name": "全部", "id": "3" }
-              ]
-            },
-            { "name": "动漫",
-              "id": "4",
-              "minor": [
-                { "name": "全部", "id": "4" }
-              ]
-            }
-          ]
-        },
+        // {
+        //   "baseUrl": "http://fpx6.cn",
+        //   "title": "墨语影视",
+        //   "type": [
+        //     { "name": "电影",
+        //       "id": "1",
+        //       "minor": [
+        //         { "name": "全部", "id": "1,6,7,8,9,10,11,12" },
+        //         { "name": "动作片", "id": "6" },
+        //         { "name": "喜剧片", "id": "7" },
+        //         { "name": "爱情片", "id": "8" },
+        //         { "name": "科幻片", "id": "9" },
+        //         { "name": "恐怖片", "id": "10" },
+        //         { "name": "剧情片", "id": "11" },
+        //         { "name": "战争片", "id": "12" }
+        //       ]
+        //     },
+        //     { "name": "电视剧",
+        //       "id": "2",
+        //       "minor": [
+        //         { "name": "全部", "id": "2,13,14,15,16" },
+        //         { "name": "国产剧", "id": "13" },
+        //         { "name": "港台剧", "id": "14" },
+        //         { "name": "日韩剧", "id": "15" },
+        //         { "name": "欧美剧", "id": "16" }
+        //       ]
+        //     },
+        //     { "name": "福利",
+        //       "id": "3",
+        //       "minor": [
+        //         { "name": "全部", "id": "3" }
+        //       ]
+        //     },
+        //     { "name": "动漫",
+        //       "id": "4",
+        //       "minor": [
+        //         { "name": "全部", "id": "4" }
+        //       ]
+        //     }
+        //   ]
+        // },
         {
           "baseUrl": "http://www.qingqingyy.com",
           "title": "轻轻影院",
@@ -236,170 +236,170 @@ class VideoController extends Controller {
             }
           ]
         },
-        {
-          "baseUrl": "http://www.yunkej.cn",
-          "title": "云客影视",
-          "type": [
-            { "name": "电影",
-              "id": "1",
-              "minor": [
-                { "name": "全部", "id": "1,6,7,8,9,10,11,12" },
-                { "name": "动作片", "id": "6" },
-                { "name": "喜剧片", "id": "7" },
-                { "name": "爱情片", "id": "8" },
-                { "name": "科幻片", "id": "9" },
-                { "name": "恐怖片", "id": "10" },
-                { "name": "剧情片", "id": "11" },
-                { "name": "战争片", "id": "12" }
-              ]
-            },
-            { "name": "电视剧",
-              "id": "2",
-              "minor": [
-                { "name": "全部", "id": "2,13,14,15,16" },
-                { "name": "国产剧", "id": "13" },
-                { "name": "港台剧", "id": "14" },
-                { "name": "日韩剧", "id": "15" },
-                { "name": "欧美剧", "id": "16" }
-              ]
-            },
-            { "name": "综艺",
-              "id": "3",
-              "minor": [
-                { "name": "全部", "id": "3" }
-              ]
-            },
-            { "name": "动漫",
-              "id": "4",
-              "minor": [
-                { "name": "全部", "id": "4" }
-              ]
-            }
-          ]
-        },
-        {
-          "baseUrl": "http://www.binbin95.com",
-          "title": "彬彬影院",
-          "type": [
-            { "name": "电影",
-              "id": "1",
-              "minor": [
-                { "name": "全部", "id": "1,6,7,8,9,10,11,12" },
-                { "name": "动作片", "id": "6" },
-                { "name": "喜剧片", "id": "7" },
-                { "name": "爱情片", "id": "8" },
-                { "name": "科幻片", "id": "9" },
-                { "name": "恐怖片", "id": "10" },
-                { "name": "剧情片", "id": "11" },
-                { "name": "战争片", "id": "12" }
-              ]
-            },
-            { "name": "电视剧",
-              "id": "2",
-              "minor": [
-                { "name": "全部", "id": "2,13,14,15,16" },
-                { "name": "国产剧", "id": "13" },
-                { "name": "港台剧", "id": "14" },
-                { "name": "日韩剧", "id": "15" },
-                { "name": "欧美剧", "id": "16" }
-              ]
-            },
-            { "name": "综艺",
-              "id": "3",
-              "minor": [
-                { "name": "全部", "id": "3" }
-              ]
-            },
-            { "name": "动漫",
-              "id": "4",
-              "minor": [
-                { "name": "全部", "id": "4" }
-              ]
-            }
-          ]
-        },
-        {
-          "baseUrl": "http://kan.eeeul.com",
-          "title": "会源影视",
-          "type": [
-            { "name": "电影",
-              "id": "1",
-              "minor": [
-                { "name": "全部", "id": "1,6,7,8,9,10,11,12" },
-                { "name": "动作片", "id": "6" },
-                { "name": "喜剧片", "id": "7" },
-                { "name": "爱情片", "id": "8" },
-                { "name": "科幻片", "id": "9" },
-                { "name": "恐怖片", "id": "10" },
-                { "name": "剧情片", "id": "11" },
-                { "name": "战争片", "id": "12" }
-              ]
-            },
-            { "name": "电视剧",
-              "id": "2",
-              "minor": [
-                { "name": "全部", "id": "2,13,14,15,16" },
-                { "name": "国产剧", "id": "13" },
-                { "name": "港台剧", "id": "14" },
-                { "name": "日韩剧", "id": "15" },
-                { "name": "欧美剧", "id": "16" }
-              ]
-            },
-            { "name": "综艺",
-              "id": "3",
-              "minor": [
-                { "name": "全部", "id": "3" }
-              ]
-            },
-            { "name": "动漫",
-              "id": "4",
-              "minor": [
-                { "name": "全部", "id": "4" }
-              ]
-            }
-          ]
-        },
-        {
-          "baseUrl": "https://m.jlszyy.cc",
-          "title": "达达兔",
-          "type": [
-            { "name": "电影",
-              "id": "1",
-              "minor": [
-                { "name": "全部", "id": "1,6,7,8,9,10,11,12" },
-                { "name": "动作片", "id": "6" },
-                { "name": "喜剧片", "id": "7" },
-                { "name": "爱情片", "id": "8" },
-                { "name": "科幻片", "id": "9" },
-                { "name": "恐怖片", "id": "10" },
-                { "name": "剧情片", "id": "11" },
-                { "name": "战争片", "id": "12" }
-              ]
-            },
-            { "name": "电视剧",
-              "id": "2",
-              "minor": [
-                { "name": "全部", "id": "2,13,14,15,16" },
-                { "name": "国产剧", "id": "13" },
-                { "name": "港台剧", "id": "14" },
-                { "name": "日韩剧", "id": "15" },
-                { "name": "欧美剧", "id": "16" }
-              ]
-            },
-            { "name": "综艺",
-              "id": "3",
-              "minor": [
-                { "name": "全部", "id": "3" }
-              ]
-            },
-            { "name": "动漫",
-              "id": "4",
-              "minor": [
-                { "name": "全部", "id": "4" }
-              ]
-            }
-          ]
-        },
+        // {
+        //   "baseUrl": "http://www.yunkej.cn",
+        //   "title": "云客影视",
+        //   "type": [
+        //     { "name": "电影",
+        //       "id": "1",
+        //       "minor": [
+        //         { "name": "全部", "id": "1,6,7,8,9,10,11,12" },
+        //         { "name": "动作片", "id": "6" },
+        //         { "name": "喜剧片", "id": "7" },
+        //         { "name": "爱情片", "id": "8" },
+        //         { "name": "科幻片", "id": "9" },
+        //         { "name": "恐怖片", "id": "10" },
+        //         { "name": "剧情片", "id": "11" },
+        //         { "name": "战争片", "id": "12" }
+        //       ]
+        //     },
+        //     { "name": "电视剧",
+        //       "id": "2",
+        //       "minor": [
+        //         { "name": "全部", "id": "2,13,14,15,16" },
+        //         { "name": "国产剧", "id": "13" },
+        //         { "name": "港台剧", "id": "14" },
+        //         { "name": "日韩剧", "id": "15" },
+        //         { "name": "欧美剧", "id": "16" }
+        //       ]
+        //     },
+        //     { "name": "综艺",
+        //       "id": "3",
+        //       "minor": [
+        //         { "name": "全部", "id": "3" }
+        //       ]
+        //     },
+        //     { "name": "动漫",
+        //       "id": "4",
+        //       "minor": [
+        //         { "name": "全部", "id": "4" }
+        //       ]
+        //     }
+        //   ]
+        // },
+        // {
+        //   "baseUrl": "http://www.binbin95.com",
+        //   "title": "彬彬影院",
+        //   "type": [
+        //     { "name": "电影",
+        //       "id": "1",
+        //       "minor": [
+        //         { "name": "全部", "id": "1,6,7,8,9,10,11,12" },
+        //         { "name": "动作片", "id": "6" },
+        //         { "name": "喜剧片", "id": "7" },
+        //         { "name": "爱情片", "id": "8" },
+        //         { "name": "科幻片", "id": "9" },
+        //         { "name": "恐怖片", "id": "10" },
+        //         { "name": "剧情片", "id": "11" },
+        //         { "name": "战争片", "id": "12" }
+        //       ]
+        //     },
+        //     { "name": "电视剧",
+        //       "id": "2",
+        //       "minor": [
+        //         { "name": "全部", "id": "2,13,14,15,16" },
+        //         { "name": "国产剧", "id": "13" },
+        //         { "name": "港台剧", "id": "14" },
+        //         { "name": "日韩剧", "id": "15" },
+        //         { "name": "欧美剧", "id": "16" }
+        //       ]
+        //     },
+        //     { "name": "综艺",
+        //       "id": "3",
+        //       "minor": [
+        //         { "name": "全部", "id": "3" }
+        //       ]
+        //     },
+        //     { "name": "动漫",
+        //       "id": "4",
+        //       "minor": [
+        //         { "name": "全部", "id": "4" }
+        //       ]
+        //     }
+        //   ]
+        // },
+        // {
+        //   "baseUrl": "http://kan.eeeul.com",
+        //   "title": "会源影视",
+        //   "type": [
+        //     { "name": "电影",
+        //       "id": "1",
+        //       "minor": [
+        //         { "name": "全部", "id": "1,6,7,8,9,10,11,12" },
+        //         { "name": "动作片", "id": "6" },
+        //         { "name": "喜剧片", "id": "7" },
+        //         { "name": "爱情片", "id": "8" },
+        //         { "name": "科幻片", "id": "9" },
+        //         { "name": "恐怖片", "id": "10" },
+        //         { "name": "剧情片", "id": "11" },
+        //         { "name": "战争片", "id": "12" }
+        //       ]
+        //     },
+        //     { "name": "电视剧",
+        //       "id": "2",
+        //       "minor": [
+        //         { "name": "全部", "id": "2,13,14,15,16" },
+        //         { "name": "国产剧", "id": "13" },
+        //         { "name": "港台剧", "id": "14" },
+        //         { "name": "日韩剧", "id": "15" },
+        //         { "name": "欧美剧", "id": "16" }
+        //       ]
+        //     },
+        //     { "name": "综艺",
+        //       "id": "3",
+        //       "minor": [
+        //         { "name": "全部", "id": "3" }
+        //       ]
+        //     },
+        //     { "name": "动漫",
+        //       "id": "4",
+        //       "minor": [
+        //         { "name": "全部", "id": "4" }
+        //       ]
+        //     }
+        //   ]
+        // },
+        // {
+        //   "baseUrl": "https://m.jlszyy.cc",
+        //   "title": "达达兔",
+        //   "type": [
+        //     { "name": "电影",
+        //       "id": "1",
+        //       "minor": [
+        //         { "name": "全部", "id": "1,6,7,8,9,10,11,12" },
+        //         { "name": "动作片", "id": "6" },
+        //         { "name": "喜剧片", "id": "7" },
+        //         { "name": "爱情片", "id": "8" },
+        //         { "name": "科幻片", "id": "9" },
+        //         { "name": "恐怖片", "id": "10" },
+        //         { "name": "剧情片", "id": "11" },
+        //         { "name": "战争片", "id": "12" }
+        //       ]
+        //     },
+        //     { "name": "电视剧",
+        //       "id": "2",
+        //       "minor": [
+        //         { "name": "全部", "id": "2,13,14,15,16" },
+        //         { "name": "国产剧", "id": "13" },
+        //         { "name": "港台剧", "id": "14" },
+        //         { "name": "日韩剧", "id": "15" },
+        //         { "name": "欧美剧", "id": "16" }
+        //       ]
+        //     },
+        //     { "name": "综艺",
+        //       "id": "3",
+        //       "minor": [
+        //         { "name": "全部", "id": "3" }
+        //       ]
+        //     },
+        //     { "name": "动漫",
+        //       "id": "4",
+        //       "minor": [
+        //         { "name": "全部", "id": "4" }
+        //       ]
+        //     }
+        //   ]
+        // },
       ],
       "list": {
         "mainUrl": "/api.php/provide/vod/?ac=list",
@@ -443,8 +443,202 @@ class VideoController extends Controller {
     const { ctx, service } = this
     // 组装参数
     const payload = ctx.query
-    if (!payload.swiperCss) {
-      payload.swiperCss = '.fed-swip-slide->.fed-list-pics&&href';
+    if (!payload.css) {
+      payload.css = [
+        {
+          key: 'swiper',
+          main: '.fed-swip-slide',
+          info: [
+            {
+              key: 'vod_pic_slide',
+              css: '.fed-list-pics',
+              attr: 'data-background',
+              needBase: true
+            },
+            {
+              key: 'href',
+              css: '.fed-list-pics',
+              attr: 'href'
+            },
+          ]
+        },
+        {
+          key: 'hot',
+          main: '.fed-part-layout',
+          index: 1,
+          second: '.fed-list-item',
+          info: [
+            {
+              key: 'vod_name',
+              css: '.fed-list-title',
+              attr: 'text'
+            },
+            {
+              key: 'href',
+              css: '.fed-list-title',
+              attr: 'href'
+            },
+            {
+              key: 'vod_pic',
+              css: '.fed-list-pics',
+              attr: 'data-original',
+              needBase: true
+            },
+            {
+              key: 'vod_actor',
+              css: '.fed-list-desc',
+              attr: 'text'
+            },
+          ]
+        },
+        {
+          key: 'new',
+          main: '.fed-part-layout',
+          index: 2,
+          second: '.fed-list-item',
+          info: [
+            {
+              key: 'vod_name',
+              css: '.fed-list-title',
+              attr: 'text'
+            },
+            {
+              key: 'href',
+              css: '.fed-list-title',
+              attr: 'href'
+            },
+            {
+              key: 'vod_pic',
+              css: '.fed-list-pics',
+              attr: 'data-original',
+              needBase: true
+            },
+            {
+              key: 'vod_actor',
+              css: '.fed-list-desc',
+              attr: 'text'
+            },
+          ]
+        },
+        {
+          key: 'dianying',
+          main: '.fed-list-home',
+          index: 0,
+          second: '.fed-list-item',
+          info: [
+            {
+              key: 'vod_name',
+              css: '.fed-list-title',
+              attr: 'text'
+            },
+            {
+              key: 'href',
+              css: '.fed-list-title',
+              attr: 'href'
+            },
+            {
+              key: 'vod_pic',
+              css: '.fed-list-pics',
+              attr: 'data-original',
+              needBase: true
+            },
+            {
+              key: 'vod_actor',
+              css: '.fed-list-desc',
+              attr: 'text'
+            },
+          ]
+        },
+        {
+          key: 'dianshiju',
+          main: '.fed-list-home',
+          index: 1,
+          second: '.fed-list-item',
+          info: [
+            {
+              key: 'vod_name',
+              css: '.fed-list-title',
+              attr: 'text'
+            },
+            {
+              key: 'href',
+              css: '.fed-list-title',
+              attr: 'href'
+            },
+            {
+              key: 'vod_pic',
+              css: '.fed-list-pics',
+              attr: 'data-original',
+              needBase: true
+            },
+            {
+              key: 'vod_actor',
+              css: '.fed-list-desc',
+              attr: 'text'
+            },
+          ]
+        },
+        {
+          key: 'zongyi',
+          main: '.fed-list-home',
+          index: 2,
+          second: '.fed-list-item',
+          info: [
+            {
+              key: 'vod_name',
+              css: '.fed-list-title',
+              attr: 'text'
+            },
+            {
+              key: 'href',
+              css: '.fed-list-title',
+              attr: 'href'
+            },
+            {
+              key: 'vod_pic',
+              css: '.fed-list-pics',
+              attr: 'data-original',
+              needBase: true
+            },
+            {
+              key: 'vod_actor',
+              css: '.fed-list-desc',
+              attr: 'text'
+            },
+          ]
+        },
+        {
+          key: 'dongman',
+          main: '.fed-list-home',
+          index: 3,
+          second: '.fed-list-item',
+          info: [
+            {
+              key: 'vod_name',
+              css: '.fed-list-title',
+              attr: 'text'
+            },
+            {
+              key: 'href',
+              css: '.fed-list-title',
+              attr: 'href'
+            },
+            {
+              key: 'vod_pic',
+              css: '.fed-list-pics',
+              attr: 'data-original',
+              needBase: true
+            },
+            {
+              key: 'vod_actor',
+              css: '.fed-list-desc',
+              attr: 'text'
+            },
+          ]
+        }
+      ];
+    } else {
+      payload.css = JSON.parse(payload.css);
     }
     // 调用 Service 进行业务处理
     const res = await service.video.mac.home(payload)

@@ -135,6 +135,9 @@ module.exports = appInfo => {
         // security definitions
         }
       },
+    },
+    alinode: {
+      enable: false
     }
   };
 
