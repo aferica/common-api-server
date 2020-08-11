@@ -58,21 +58,21 @@ module.exports = appInfo => {
       appId: 'wx79e1700ff218a66d',
       appSecret: 'df1677c10333ffab9bfacf289b4fec79',
     },
-    mysql: {
-      // database configuration
-      client: {
-        // host
-        host: '127.0.0.1',
-        // port
-        port: '3306',
-        // username
-        user: 'root',
-        // password
-        password: '123456',
-        // database
-        database: 'common',    
-      }
-    },
+    // mysql: {
+    //   // database configuration
+    //   client: {
+    //     // host
+    //     host: '127.0.0.1',
+    //     // port
+    //     port: '3306',
+    //     // username
+    //     user: 'root',
+    //     // password
+    //     password: '123456',
+    //     // database
+    //     database: 'common',    
+    //   }
+    // },
     porxyOptions: {
       httpUrl: 'http://127.0.0.1:1080',
       socksHost: '127.0.0.1',
