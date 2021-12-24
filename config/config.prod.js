@@ -23,7 +23,7 @@ module.exports = () => {
     // database configuration
     client: {
       // host
-      host: '127.0.0.1',
+      host: '203.195.172.224',
       // port
       port: '3306',
       // username
